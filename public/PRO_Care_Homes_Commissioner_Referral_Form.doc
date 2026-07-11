@@ -1,0 +1,188 @@
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+<head>
+<meta charset="utf-8">
+<title>PRO Care Homes - Commissioner Complete Referral Form</title>
+<style>
+  body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    color: #1e293b;
+    line-height: 1.5;
+    margin: 20px;
+  }
+  h1 {
+    color: #132b50;
+    font-size: 22pt;
+    text-align: center;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #06afbb;
+    padding-bottom: 10px;
+  }
+  .subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #4b5563;
+    margin-bottom: 30px;
+    font-size: 11pt;
+  }
+  h2 {
+    color: #132b50;
+    font-size: 14pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 5px;
+    margin-top: 25px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  th, td {
+    border: 1px solid #cbd5e1;
+    padding: 8px 12px;
+    font-size: 10pt;
+    vertical-align: top;
+  }
+  th {
+    background-color: #f1f5f9;
+    color: #132b50;
+    font-weight: bold;
+    width: 30%;
+  }
+  .highlight-box {
+    background-color: #f0fdfa;
+    border-left: 4px solid #06afbb;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 10pt;
+  }
+  .footer-text {
+    text-align: center;
+    font-size: 8pt;
+    color: #94a3b8;
+    margin-top: 40px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+  <h1>PRO Care Homes | Supported Living</h1>
+  <div class="subtitle">Secure Commissioner Pre-Admission Referral Dossier Packet</div>
+
+  <div class="highlight-box">
+    <strong>REGULATORY NOTE FOR COMMISSIONERS & PLACEMENT BROKERS:</strong><br>
+    This form complies with CQC Regulation 17 (Good Governance) and CQC Regulation 9 (Person-Centred Care). Under the direct operational oversight of Salman Muhammad and Nominated Individual Boston Murray, PRO Care Homes specializes in placement stability and positive risk empowerment for Learning Disabilities, Autism Spectrum Condition, and complex Associated Mental Health challenges.
+  </div>
+
+  <h2>1. Referrer & Authority Contact Details</h2>
+  <table>
+    <tr>
+      <th>Referring Authority Name</th>
+      <td>[e.g., Birmingham City Council / NHS CHC]</td>
+    </tr>
+    <tr>
+      <th>Assessor / Commissioner Name</th>
+      <td>[Enter Assessor Full Name]</td>
+    </tr>
+    <tr>
+      <th>Professional Title / Role</th>
+      <td>[e.g., Social Worker, Commissioning Broker]</td>
+    </tr>
+    <tr>
+      <th>Secure Work Email Address</th>
+      <td>[Enter secure .gov.uk or .nhs.net email]</td>
+    </tr>
+    <tr>
+      <th>Direct Contact Telephone</th>
+      <td>[Enter direct telephone number]</td>
+    </tr>
+    <tr>
+      <th>Date of Secure Referral</th>
+      <td>[DD / MM / YYYY]</td>
+    </tr>
+  </table>
+
+  <h2>2. Resident Information & Demographics</h2>
+  <table>
+    <tr>
+      <th>Resident Identifier / Name</th>
+      <td>[Enter name or unique alphanumeric ID]</td>
+    </tr>
+    <tr>
+      <th>Date of Birth & Age</th>
+      <td>[DD / MM / YYYY] (Age: ____)</td>
+    </tr>
+    <tr>
+      <th>Current Placement Status</th>
+      <td>[e.g., Hospital Step-Down, Family Home, Placement Breakdown]</td>
+    </tr>
+    <tr>
+      <th>Key Diagnoses</th>
+      <td>
+        [ ] Autism Spectrum Condition<br>
+        [ ] Moderate / Severe Learning Disability<br>
+        [ ] Complex Associated Mental Health Needs<br>
+        [ ] Forensic / Risk History Details
+      </td>
+    </tr>
+    <tr>
+      <th>Sensory or Physical Needs</th>
+      <td>[Describe specific sensory aversions, dietary requirements, or physical accommodation needs]</td>
+    </tr>
+  </table>
+
+  <h2>3. Support Ratio Requirements & Funding</h2>
+  <table>
+    <tr>
+      <th>Proposed Support Ratio</th>
+      <td>
+        [ ] 1:1 Support (Daytime)<br>
+        [ ] 2:1 Support (Daytime)<br>
+        [ ] 1:1 Night Support (Waking)<br>
+        [ ] Shared Night Support (Sleep-in)<br>
+        [ ] Custom staffing framework
+      </td>
+    </tr>
+    <tr>
+      <th>Funding Status</th>
+      <td>
+        [ ] Fully Secured<br>
+        [ ] Joint Funding Agreed (Health & Social Care)<br>
+        [ ] Subject to Assessment Panel approval
+      </td>
+    </tr>
+    <tr>
+      <th>Assessed Weekly Budget Cap</th>
+      <td>£ _______________ per week</td>
+    </tr>
+  </table>
+
+  <h2>4. Core Risk & Environmental Compatibility Matrix</h2>
+  <table>
+    <tr>
+      <th>Past Placement Challenges</th>
+      <td>[Describe reasons for current/past placement changes or breakdowns]</td>
+    </tr>
+    <tr>
+      <th>Known Warning Signs & Triggers</th>
+      <td>[Identify pre-cursor behaviors or environmental elements causing sensory distress]</td>
+    </tr>
+    <tr>
+      <th>Environmental Compatibility Requirements</th>
+      <td>[Details regarding shared spaces, en-suite preferences, or escape room needs inside 6 Flags House]</td>
+    </tr>
+  </table>
+
+  <h2>5. Authorization & Verification</h2>
+  <p>I confirm that the information submitted above is accurate to the best of my knowledge and is transmitted in compliance with GDPR and local data protection regulations for the purpose of pre-admission screening.</p>
+  <br>
+  <p><strong>Commissioner Signature:</strong> _____________________________________ &nbsp;&nbsp;&nbsp;&nbsp; <strong>Date:</strong> _________________</p>
+
+  <div class="footer-text">
+    PRO Care Homes Ltd • info@procarehomes.co.uk • +44 (0) 7904 908123<br>
+    CQC Registered Provider Framework System • Secure Referral Portal
+  </div>
+
+</body>
+</html>

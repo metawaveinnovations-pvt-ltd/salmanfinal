@@ -1,0 +1,18 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # 1. API Endpoint Routing Map
+  # Map pretty URL endpoints directly to our native PHP files
+  RewriteRule ^api/assistant$ api/assistant.php [L,QSA]
+  RewriteRule ^api/referral$ api/referral.php [L,QSA]
+  RewriteRule ^api/commissioner-referral$ api/commissioner_referral.php [L,QSA]
+  RewriteRule ^api/careers$ api/career.php [L,QSA]
+  RewriteRule ^api/contact$ api/contact.php [L,QSA]
+
+  # 2. React SPA Routing Configuration
+  # If the requested file or directory does not exist, route to index.html so React's client router resolves it.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
