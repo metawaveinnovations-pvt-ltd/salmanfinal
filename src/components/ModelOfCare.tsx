@@ -89,20 +89,20 @@ export default function ModelOfCare({ onNavigate, activeTab: propActiveTab, setA
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Tab Selection Area */}
-          <div className="flex flex-wrap justify-center gap-2 mb-12">
+          <div className="flex overflow-x-auto no-scrollbar sm:flex-wrap sm:justify-center gap-2 mb-8 sm:mb-12 -mx-4 px-4 sm:mx-0 sm:px-0">
           {models.map((m) => {
             const Icon = m.icon;
             return (
               <button
                 key={m.id}
                 onClick={() => setActiveTab(m.id)}
-                className={`flex items-center space-x-2 px-4 py-3 rounded-xl text-xs font-bold transition-all ${
+                className={`flex items-center space-x-2 px-4 py-3 rounded-xl text-xs font-bold transition-all whitespace-nowrap ${
                   activeTab === m.id
                     ? "bg-sky-600 text-white shadow-md shadow-sky-100 scale-102"
                     : "bg-white text-slate-700 border border-slate-200 hover:border-sky-300 hover:bg-sky-50/30"
                 }`}
               >
-                <Icon className="w-4 h-4" />
+                <Icon className="w-4 h-4 flex-shrink-0" />
                 <span>{m.title.split(" (")[0]}</span>
               </button>
             );
@@ -114,20 +114,20 @@ export default function ModelOfCare({ onNavigate, activeTab: propActiveTab, setA
           <div className="grid grid-cols-1 lg:grid-cols-12">
             
             {/* Visual Title and Summary Left Panel */}
-            <div className="lg:col-span-5 bg-gradient-to-br from-sky-600 to-sky-700 p-8 sm:p-12 text-white flex flex-col justify-between">
+            <div className="lg:col-span-5 bg-gradient-to-br from-sky-600 to-sky-700 p-6 xs:p-8 sm:p-12 text-white flex flex-col justify-between">
               <div className="space-y-6">
                 <div className="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center border border-white/20">
                   <CurrentIcon className="w-8 h-8 text-sky-100" />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-2xl font-bold tracking-tight">{currentModel.title}</h3>
-                  <p className="text-sky-100/90 text-sm font-medium leading-relaxed italic border-l-2 border-emerald-300 pl-3">
+                  <h3 className="text-xl sm:text-2xl font-bold tracking-tight">{currentModel.title}</h3>
+                  <p className="text-sky-100/90 text-xs sm:text-sm font-medium leading-relaxed italic border-l-2 border-emerald-300 pl-3">
                     &ldquo;{currentModel.short}&rdquo;
                   </p>
                 </div>
               </div>
               
-              <div className="mt-8 lg:mt-0 pt-6 border-t border-white/10">
+              <div className="mt-6 sm:mt-8 lg:mt-0 pt-6 border-t border-white/10">
                 <span className="text-[10px] font-mono tracking-widest text-emerald-300 uppercase block font-semibold">
                   Governed Framework
                 </span>
@@ -138,13 +138,13 @@ export default function ModelOfCare({ onNavigate, activeTab: propActiveTab, setA
             </div>
 
             {/* Explainer Right Panel */}
-            <div className="lg:col-span-7 p-8 sm:p-12 space-y-8">
+            <div className="lg:col-span-7 p-6 xs:p-8 sm:p-12 space-y-8">
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 
                 {/* What it means */}
                 <div className="space-y-3">
-                  <h4 className="inline-flex items-center text-[12px] sm:text-[13px] uppercase font-extrabold tracking-wider font-sans text-sky-850 bg-sky-100/80 px-3 py-1 rounded-full border border-sky-200/50 shadow-3xs">
+                  <h4 className="inline-flex items-center text-[11px] sm:text-[13px] uppercase font-extrabold tracking-wider font-sans text-sky-850 bg-sky-100/80 px-3 py-1 rounded-full border border-sky-200/50 shadow-3xs">
                     What It Means
                   </h4>
                   <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
@@ -153,8 +153,8 @@ export default function ModelOfCare({ onNavigate, activeTab: propActiveTab, setA
                 </div>
 
                 {/* How it is implemented */}
-                <div className="space-y-3">
-                  <h4 className="inline-flex items-center text-[12px] sm:text-[13px] uppercase font-extrabold tracking-wider font-sans text-emerald-850 bg-emerald-100/80 px-3 py-1 rounded-full border border-emerald-200/50 shadow-3xs">
+                <div className="space-y-3 border-t border-slate-100 pt-6 sm:border-t-0 sm:pt-0">
+                  <h4 className="inline-flex items-center text-[11px] sm:text-[13px] uppercase font-extrabold tracking-wider font-sans text-emerald-850 bg-emerald-100/80 px-3 py-1 rounded-full border border-emerald-200/50 shadow-3xs">
                     How We Implement It
                   </h4>
                   <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
@@ -164,7 +164,7 @@ export default function ModelOfCare({ onNavigate, activeTab: propActiveTab, setA
 
                 {/* Benefits to residents */}
                 <div className="space-y-3 border-t border-slate-100 pt-6">
-                  <h4 className="inline-flex items-center text-[12px] sm:text-[13px] uppercase font-extrabold tracking-wider font-sans text-amber-850 bg-amber-100/80 px-3 py-1 rounded-full border border-amber-200/50 shadow-3xs">
+                  <h4 className="inline-flex items-center text-[11px] sm:text-[13px] uppercase font-extrabold tracking-wider font-sans text-amber-850 bg-amber-100/80 px-3 py-1 rounded-full border border-amber-200/50 shadow-3xs">
                     Benefits to Residents
                   </h4>
                   <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">
@@ -174,7 +174,7 @@ export default function ModelOfCare({ onNavigate, activeTab: propActiveTab, setA
 
                 {/* Delivery model */}
                 <div className="space-y-3 border-t border-slate-100 pt-6">
-                  <h4 className="inline-flex items-center text-[12px] sm:text-[13px] uppercase font-extrabold tracking-wider font-sans text-indigo-850 bg-indigo-100/80 px-3 py-1 rounded-full border border-indigo-200/50 shadow-3xs">
+                  <h4 className="inline-flex items-center text-[11px] sm:text-[13px] uppercase font-extrabold tracking-wider font-sans text-indigo-850 bg-indigo-100/80 px-3 py-1 rounded-full border border-indigo-200/50 shadow-3xs">
                     Operational Delivery
                   </h4>
                   <p className="text-slate-600 text-xs sm:text-sm leading-relaxed">

@@ -6,13 +6,13 @@ export default function Footer({ onNavigate }: { onNavigate: (id: string) => voi
 
   return (
     <footer id="main-footer" className="bg-slate-950 text-slate-300 border-t border-gov-blue/15 text-xs py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl lg:max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Upper Column Layout */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-slate-900 items-start">
           
           {/* Column A: Brand Info */}
-          <div className="md:col-span-4 space-y-4">
+          <div className="md:col-span-4 lg:col-span-4 space-y-4">
             <Logo className="w-9 h-9" lightText={true} />
             
             <p className="text-slate-400 leading-relaxed text-[11px]">
@@ -25,7 +25,7 @@ export default function Footer({ onNavigate }: { onNavigate: (id: string) => voi
           </div>
 
           {/* Column B: Navigation Links */}
-          <div className="md:col-span-3 space-y-3">
+          <div className="md:col-span-4 lg:col-span-3 space-y-3">
             <h4 className="font-bold text-white uppercase text-[10px] tracking-wider font-mono">
               Governance & Map
             </h4>
@@ -51,7 +51,7 @@ export default function Footer({ onNavigate }: { onNavigate: (id: string) => voi
           </div>
 
           {/* Column C: Dynamic Programmes */}
-          <div className="md:col-span-3 space-y-3">
+          <div className="md:col-span-4 lg:col-span-3 space-y-3">
             <h4 className="font-bold text-white uppercase text-[10px] tracking-wider font-mono">
               Systems & Careers
             </h4>
@@ -81,11 +81,11 @@ export default function Footer({ onNavigate }: { onNavigate: (id: string) => voi
           </div>
 
           {/* Column D: Immediate Contact Info */}
-          <div className="md:col-span-2 space-y-3">
+          <div className="md:col-span-12 lg:col-span-2 space-y-3 md:border-t md:border-slate-900/60 lg:border-t-0 md:pt-6 lg:pt-0 md:text-center lg:text-left md:flex md:flex-col md:items-center lg:block">
             <h4 className="font-bold text-white uppercase text-[10px] tracking-wider font-mono">
               Secure Inboxes
             </h4>
-            <ul className="space-y-3.5 pt-1 text-slate-400">
+            <ul className="space-y-3.5 md:space-y-0 md:space-x-12 lg:space-x-0 lg:space-y-3.5 pt-1 text-slate-400 md:flex lg:block md:justify-center">
               <li className="flex items-start space-x-2">
                 <Phone className="w-4 h-4 text-premium-gold flex-shrink-0 mt-0.5" />
                 <div>

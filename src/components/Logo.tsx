@@ -141,12 +141,12 @@ export default function Logo({ className = "w-10 h-10", showText = true, lightTe
 
       {/* Brand Text labels */}
       {showText && (
-        <div>
-          <span className={`text-xl font-extrabold tracking-tight block font-sans ${lightText ? "text-white" : "text-[#132B50]"}`}>
+        <div className="block">
+          <span className={`text-sm sm:text-xl font-extrabold tracking-tight block font-sans whitespace-nowrap ${lightText ? "text-white" : "text-[#132B50]"}`}>
             PRO <span className="text-[#06AFBB]">Care Homes</span>
           </span>
-          <span className={`text-[9px] font-mono tracking-widest uppercase font-bold block -mt-1 ${lightText ? "text-slate-400" : "text-[#7D3196]"}`}>
-            LTD • CARE QUALITY & INDEPENDENCE
+          <span className={`text-[8px] sm:text-[9px] font-mono tracking-widest uppercase font-bold block -mt-1 ${lightText ? "text-slate-400" : "text-[#7D3196]"}`}>
+            LTD<span className="hidden sm:inline"> • CARE QUALITY & INDEPENDENCE</span>
           </span>
         </div>
       )}

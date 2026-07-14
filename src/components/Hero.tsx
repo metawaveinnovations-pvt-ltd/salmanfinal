@@ -121,26 +121,26 @@ export default function Hero({ onNavigate }: HeroProps) {
   return (
     <section
       id="hero"
-      className="relative min-h-screen pt-36 sm:pt-40 md:pt-44 lg:pt-48 pb-16 lg:py-24 xl:py-32 flex items-center bg-gradient-to-br from-white via-warm-bg to-care-green/5 overflow-hidden text-slate-800"
+      className="relative min-h-screen pt-28 xs:pt-32 sm:pt-40 md:pt-44 lg:pt-48 pb-12 sm:pb-16 lg:py-24 xl:py-32 flex items-center bg-gradient-to-br from-white via-warm-bg to-care-green/5 overflow-hidden text-slate-800"
     >
       {/* Absolute Decorative Blobs for premium ambiance */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-gov-blue/5 rounded-full blur-3xl -z-10" />
       <div className="absolute bottom-20 left-10 w-[500px] h-[500px] bg-care-green/5 rounded-full blur-3xl -z-10" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div className="max-w-7xl lg:max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 relative w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-12 items-center">
           
           {/* Text and Primary messaging column */}
-          <div className="lg:col-span-12 xl:col-span-6 space-y-6 sm:space-y-8">
+          <div className="lg:col-span-12 xl:col-span-6 space-y-5 sm:space-y-8">
             {/* Tagline */}
             <motion.div
               initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
-              className="inline-flex items-center space-x-2 bg-gov-blue/[0.04] px-3.5 py-1.5 rounded-full border border-gov-blue/10"
+              className="inline-flex items-center space-x-1.5 sm:space-x-2 bg-gov-blue/[0.04] px-2.5 py-1 sm:px-3.5 sm:py-1.5 rounded-full border border-gov-blue/10 max-w-full"
             >
-              <ShieldCheck className="w-4.5 h-4.5 text-gov-blue animate-pulse" />
-              <span className="text-xs font-semibold text-gov-blue tracking-wide font-sans">
+              <ShieldCheck className="w-4 h-4 sm:w-4.5 sm:h-4.5 text-gov-blue flex-shrink-0 animate-pulse" />
+              <span className="text-[10px] sm:text-xs font-semibold text-gov-blue tracking-wide font-sans leading-snug">
                 Registered UK Healthcare Provider • CQC Registration Pending
               </span>
             </motion.div>
@@ -150,29 +150,29 @@ export default function Hero({ onNavigate }: HeroProps) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.1 }}
-              className="space-y-4"
+              className="space-y-3.5 sm:space-y-4"
             >
-              <h1 className="text-2xl xs:text-3.5xl sm:text-4xl md:text-5xl lg:text-[40px] xl:text-[48px] 2xl:text-[54px] font-extrabold text-gov-blue tracking-tight leading-tight sm:leading-[1.12] font-sans">
+              <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-[40px] xl:text-[48px] 2xl:text-[54px] font-extrabold text-gov-blue tracking-tight leading-tight sm:leading-[1.12] font-sans">
                 Creating <span className="text-calm-blue">Homes</span>, Building
                 <span className="block text-care-green border-b-2 border-premium-gold/40 pb-0.5 mt-1 sm:mt-2 w-fit lg:inline-block">Meaningful Lives</span>
               </h1>
               
-              <div className="space-y-4 text-text-secondary max-w-2xl">
-                <p className="text-sm sm:text-base font-medium text-gov-blue/80 leading-relaxed">
+              <div className="space-y-3.5 sm:space-y-4 text-text-secondary max-w-2xl">
+                <p className="text-xs sm:text-base font-medium text-gov-blue/80 leading-relaxed">
                   PRO Care Homes provides high-quality, person-centred support designed to promote independence across our key service areas:
                 </p>
-                <ul className="space-y-2.5 pl-1">
-                  <li className="flex items-start space-x-3 text-sm sm:text-[15px] leading-relaxed text-text-primary">
-                    <span className="mt-2 flex-shrink-0 w-2 h-2 rounded-full bg-care-green" />
+                <ul className="space-y-2 sm:space-y-2.5 pl-1">
+                  <li className="flex items-start space-x-2.5 sm:space-x-3 text-xs sm:text-[15px] leading-relaxed text-text-primary">
+                    <span className="mt-1.5 sm:mt-2 flex-shrink-0 w-2 h-2 rounded-full bg-care-green" />
                     <span><strong>Fully compliant specialist residential support</strong> for adults with learning disabilities and autism options.</span>
                   </li>
-                  <li className="flex items-start space-x-3 text-sm sm:text-[15px] leading-relaxed text-text-primary">
-                    <span className="mt-2 flex-shrink-0 w-2 h-2 rounded-full bg-calm-blue" />
+                  <li className="flex items-start space-x-2.5 sm:space-x-3 text-xs sm:text-[15px] leading-relaxed text-text-primary">
+                    <span className="mt-1.5 sm:mt-2 flex-shrink-0 w-2 h-2 rounded-full bg-calm-blue" />
                     <span><strong>Supported living, independent living and preparation for adulthood.</strong> Supporting our people out and about in their community as well as their homes, through unregulated support.</span>
                   </li>
                 </ul>
-                <div className="pt-3 border-t border-slate-100">
-                  <p className="text-base sm:text-lg font-black text-gov-blue tracking-tight">
+                <div className="pt-2.5 sm:pt-3 border-t border-slate-100">
+                  <p className="text-sm sm:text-lg font-black text-gov-blue tracking-tight">
                     Quick referrals, Caring admissions, Stable placements.
                   </p>
                 </div>
@@ -184,21 +184,27 @@ export default function Hero({ onNavigate }: HeroProps) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.9, delay: 0.4 }}
-              className="pt-6 border-t border-slate-100 flex flex-wrap gap-4 sm:gap-6 items-center text-xs text-text-secondary font-sans font-semibold tracking-wide text-slate-500"
+              className="pt-4 sm:pt-6 border-t border-slate-100 flex flex-col sm:flex-row gap-2.5 sm:gap-6 items-start sm:items-center text-[10px] sm:text-xs text-text-secondary font-sans font-semibold tracking-wide text-slate-500"
             >
               <div className="flex items-center space-x-2">
-                <span className="w-2.5 h-2.5 bg-amber-500 rounded-full animate-ping" />
+                <span className="w-2 h-2 sm:w-2.5 sm:h-2.5 bg-amber-500 rounded-full animate-ping" />
                 <span>CQC FRAMEWORK PENDING</span>
               </div>
               <div className="hidden sm:block text-slate-300">•</div>
-              <div>PBS CERTIFIED STAFF</div>
+              <div className="flex items-center space-x-2">
+                <span className="w-1.5 h-1.5 bg-gov-blue/40 rounded-full sm:hidden" />
+                <span>PBS CERTIFIED STAFF</span>
+              </div>
               <div className="hidden sm:block text-slate-300">•</div>
-              <div>PERSONALISED SUPPORT DESIGNS</div>
+              <div className="flex items-center space-x-2">
+                <span className="w-1.5 h-1.5 bg-gov-blue/40 rounded-full sm:hidden" />
+                <span>PERSONALISED SUPPORT DESIGNS</span>
+              </div>
             </motion.div>
           </div>
 
           {/* RIGHT COLUMN: Interactive Wireframe Collage with real high-resolution young adults images */}
-          <div className="lg:col-span-12 xl:col-span-6 relative py-6 flex flex-col justify-center items-center w-full" id="referral-framework">
+          <div className="lg:col-span-12 xl:col-span-6 relative py-4 sm:py-6 flex flex-col justify-center items-center w-full" id="referral-framework">
             <motion.div
               initial={{ opacity: 0, scale: 0.96 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -210,7 +216,7 @@ export default function Hero({ onNavigate }: HeroProps) {
                 
                 {/* 1. CENTRAL CIRLCE SHAPE - white-bordered circle clip */}
                 <div 
-                  className="absolute w-[29%] aspect-square rounded-full bg-white border-[8px] md:border-[10px] border-white shadow-[0_15px_45px_rgba(0,0,0,0.25)] z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden transition-all duration-300"
+                  className="absolute w-[29%] aspect-square rounded-full bg-white border-[4px] sm:border-[8px] md:border-[10px] border-white shadow-[0_15px_45px_rgba(0,0,0,0.25)] z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden transition-all duration-300"
                   id="collage-center-circle"
                 >
                   <AnimatePresence mode="wait">
@@ -231,8 +237,8 @@ export default function Hero({ onNavigate }: HeroProps) {
                         />
                         {/* Elegant overlay badge inside centre circle */}
                         <div className="absolute inset-0 bg-gov-blue/20 flex items-center justify-center">
-                          <div className="bg-white/90 p-1.5 rounded-full shadow-md">
-                            {React.createElement(activeHoveredBlock.icon, { className: "w-4 h-4 text-care-green" })}
+                          <div className="bg-white/90 p-1 rounded-full shadow-md">
+                            {React.createElement(activeHoveredBlock.icon, { className: "w-3 h-3 sm:w-4 sm:h-4 text-care-green" })}
                           </div>
                         </div>
                       </motion.div>
@@ -242,13 +248,13 @@ export default function Hero({ onNavigate }: HeroProps) {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="w-full h-full bg-gradient-to-br from-gov-blue via-slate-900 to-care-green flex flex-col items-center justify-center p-2 relative overflow-hidden"
+                        className="w-full h-full bg-gradient-to-br from-gov-blue via-slate-900 to-care-green flex flex-col items-center justify-center p-1 sm:p-2 relative overflow-hidden"
                       >
                         {/* Slow spinning aesthetic ring */}
                         <div className="absolute inset-0.5 border border-dashed border-white/20 rounded-full animate-[spin_20s_linear_infinite]" />
                         
-                        <HeartPulse className="w-6 h-6 text-emerald-400 animate-pulse relative z-10" />
-                        <span className="text-[7.5px] text-white/90 font-mono font-bold tracking-widest uppercase mt-1 relative z-10 text-center leading-none">
+                        <HeartPulse className="w-4 h-4 sm:w-6 sm:h-6 text-emerald-400 animate-pulse relative z-10" />
+                        <span className="text-[6px] sm:text-[7.5px] text-white/90 font-mono font-bold tracking-widest uppercase mt-0.5 sm:mt-1 relative z-10 text-center leading-none">
                           PRO CARE
                         </span>
                       </motion.div>
@@ -261,9 +267,10 @@ export default function Hero({ onNavigate }: HeroProps) {
                   return (
                     <div
                       key={block.id}
-                      className={`absolute ${block.className} rounded-lg overflow-hidden border-[8px] md:border-[10px] border-white shadow-[0_12px_35px_rgba(0,0,0,0.16)] transition-all duration-500 ease-out cursor-pointer z-10 hover:z-30 hover:scale-[1.05] hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)] group`}
+                      className={`absolute ${block.className} rounded-lg overflow-hidden border-[3px] sm:border-[8px] md:border-[10px] border-white shadow-[0_8px_25px_rgba(0,0,0,0.12)] sm:shadow-[0_12px_35px_rgba(0,0,0,0.16)] transition-all duration-500 ease-out cursor-pointer z-10 hover:z-30 hover:scale-[1.05] hover:shadow-[0_25px_60px_rgba(0,0,0,0.35)] group`}
                       onMouseEnter={() => setHoveredBlockId(block.id)}
                       onMouseLeave={() => setHoveredBlockId(null)}
+                      onClick={() => setHoveredBlockId(hoveredBlockId === block.id ? null : block.id)}
                       id={`collage-shape-${block.id}`}
                     >
                       {/* Front Layer: High Quality Image */}
@@ -275,7 +282,7 @@ export default function Hero({ onNavigate }: HeroProps) {
                       />
 
                       {/* Behind Layer revealed smoothly on hover - clean title and description fitted perfectly */}
-                      <div className="absolute inset-0 bg-slate-950/95 opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-center p-2 text-left border border-white/10 overflow-hidden">
+                      <div className="absolute inset-0 bg-slate-950/95 opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-center p-1 sm:p-2 text-left border border-white/10 overflow-hidden">
                         <div className="space-y-0.5 xs:space-y-1">
                           <h5 className={block.titleSize}>
                             {block.title}
@@ -292,12 +299,12 @@ export default function Hero({ onNavigate }: HeroProps) {
               </div>
 
               {/* Informative visual label under the custom diagram structure */}
-              <div className="flex items-center justify-between text-[10px] px-2 font-sans font-medium text-slate-400 mt-2">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-[9px] sm:text-[10px] px-2 font-sans font-medium text-slate-400 mt-3">
                 <span className="flex items-center space-x-1.5">
                   <span className="w-1.5 h-1.5 rounded-full bg-care-green animate-ping" />
-                  <span>Hover any collage segment to reveal specifications behind</span>
+                  <span>Tap or hover any collage segment to reveal specifications</span>
                 </span>
-                <span className="font-semibold text-slate-500 bg-slate-100 px-2 py-0.5 rounded">
+                <span className="font-semibold text-slate-500 bg-slate-100 px-2 py-0.5 rounded text-[8px] sm:text-[10px]">
                   Layout: Interactive Wireframe
                 </span>
               </div>

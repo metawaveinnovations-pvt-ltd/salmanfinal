@@ -261,14 +261,14 @@ export default function Header({ onNavigate, activeSection }: HeaderProps) {
 
           {/* Info label left */}
           <div className="flex items-center space-x-2">
-            <span className="relative flex h-2 w-2">
+            <span className="relative hidden lg:flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#EAF7F4] opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-[#C7E6DC]"></span>
             </span>
             <span className="tracking-wide uppercase font-bold text-[10px] text-white opacity-95 flex items-center space-x-1 font-mono">
-              <span>GOVERNANCE-LED SPECIALIST CARE</span>
-              <span className="hidden sm:inline-block">•</span>
-              <span className="hidden sm:inline-block text-white">PRO-CARE HOMES LTD</span>
+              <span className="hidden lg:inline">GOVERNANCE-LED SPECIALIST CARE</span>
+              <span className="hidden lg:inline">•</span>
+              <span className="text-white">PRO-CARE HOMES LTD</span>
             </span>
           </div>
 
@@ -279,11 +279,11 @@ export default function Header({ onNavigate, activeSection }: HeaderProps) {
 
           {/* Regulatory/Contact indicators right */}
           <div className="flex items-center space-x-4">
-            <div className="flex items-center space-x-1 font-mono font-bold text-[10px] text-white">
+            <div className="hidden lg:flex items-center space-x-1 font-mono font-bold text-[10px] text-white">
               <ShieldCheck className="w-3.5 h-3.5 text-amber-300 flex-shrink-0" />
               <span className="tracking-wide">CQC REGISTRATION PENDING</span>
             </div>
-            <span className="hidden md:inline-block text-white/40">|</span>
+            <span className="hidden lg:inline-block text-white/40">|</span>
             <a 
               href="#contact" 
               onClick={(e) => {
@@ -298,7 +298,7 @@ export default function Header({ onNavigate, activeSection }: HeaderProps) {
             {/* Close announcement banner */}
             <button
               onClick={() => setIsBannerVisible(false)}
-              className="p-1 hover:bg-white/15 rounded-md cursor-pointer transition text-white/90 hover:text-white"
+              className="p-1 hover:bg-white/15 rounded-md cursor-pointer transition text-white/90 hover:text-white hidden lg:block"
               title="Dismiss Announcement"
             >
               <X className="w-3.5 h-3.5" />
@@ -445,19 +445,19 @@ export default function Header({ onNavigate, activeSection }: HeaderProps) {
           </div>
 
           {/* Mobile responsive toggle */}
-          <div className="flex lg:hidden items-center space-x-2">
+          <div className="flex lg:hidden items-center space-x-1.5 sm:space-x-2">
             <button
               onClick={() => onNavigate("referrals")}
-              className="px-3.5 py-2 bg-gov-blue text-white rounded-xl text-xs font-extrabold shadow-sm active:scale-95 transition"
+              className="px-2.5 sm:px-3.5 py-1.5 sm:py-2 bg-gov-blue text-white rounded-xl text-[10px] sm:text-xs font-extrabold shadow-sm active:scale-95 transition whitespace-nowrap"
             >
-              Referral
+              <span>Commissioners Hub</span>
             </button>
             <button
               id="mobile-drawer-trigger"
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2.5 rounded-xl text-text-secondary hover:text-gov-blue hover:bg-gov-blue/[0.04] transition-colors border border-gov-blue/5"
+              className="p-1.5 sm:p-2 rounded-xl text-text-secondary hover:text-gov-blue hover:bg-gov-blue/[0.04] transition-colors border border-gov-blue/5 flex-shrink-0"
             >
-              {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {isOpen ? <X className="w-4 h-4 sm:w-5 h-5" /> : <Menu className="w-4 h-4 sm:w-5 h-5" />}
             </button>
           </div>
 

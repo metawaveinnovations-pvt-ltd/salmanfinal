@@ -169,10 +169,10 @@ export default function HumanCare({ onNavigate }: HumanCareProps) {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mt-16 bg-[#FAFCFB] border border-emerald-500/10 rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-[0_2px_12px_rgba(16,185,129,0.01)] text-left"
+          className="mt-16 bg-gradient-to-r from-care-green/[0.04] via-sky-500/[0.04] to-emerald-500/[0.04] backdrop-blur-md border border-care-green/15 rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-[0_12px_40px_rgba(6,175,189,0.04)] text-left relative overflow-hidden"
         >
           <div className="space-y-2 flex-1 md:pr-4">
-            <span className="text-[9px] uppercase font-mono tracking-widest text-emerald-600 font-bold flex items-center gap-1">
+            <span className="text-[9px] uppercase font-mono tracking-widest text-care-green font-bold flex items-center gap-1.5 bg-care-green/10 px-2.5 py-1 rounded-md border border-care-green/15 w-fit">
               <Hand className="w-3.5 h-3.5" /> Our Promise of Kind Support
             </span>
             <h3 className="text-base sm:text-lg font-extrabold text-gov-blue tracking-tight">
@@ -186,7 +186,7 @@ export default function HumanCare({ onNavigate }: HumanCareProps) {
           <div className="flex-shrink-0 w-full md:w-auto">
             <button
               onClick={() => onNavigate && onNavigate("about")}
-              className="w-full md:w-auto px-5 py-3 bg-white text-slate-700 border border-slate-200 hover:border-emerald-300 hover:text-emerald-700 font-bold text-xs rounded-xl transition shadow-xs active:scale-95 cursor-pointer block text-center"
+              className="w-full md:w-auto px-5 py-3 bg-white/70 backdrop-blur-xs text-slate-700 border border-care-green/20 hover:border-care-green/40 hover:bg-care-green/5 hover:text-care-green font-bold text-xs rounded-xl transition shadow-xs active:scale-95 cursor-pointer block text-center"
             >
               Learn More About Our Philosophy
             </button>

@@ -46,3 +46,12 @@ body {
   background-color: #F7F8FA;
   color: #1B1F24;
 }
+
+/* Hide scrollbars for slick swiping controls */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
