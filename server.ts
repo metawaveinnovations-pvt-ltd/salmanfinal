@@ -17,7 +17,7 @@ const DB_FILE = path.join(process.cwd(), "database.json");
 // Initialize JSON database
 function initDb() {
   if (!fs.existsSync(DB_FILE)) {
-    fs.writeFileSync(DB_FILE, JSON.stringify({ referrals: [], inquiries: [], careers: [], commissioner_referrals: [] }, null, 2), "utf-8");
+    fs.writeFileSync(DB_FILE, JSON.stringify({ referrals: [], inquiries: [], careers: [], commissioner_referrals: [], onboardings: [] }, null, 2), "utf-8");
   }
 }
 
@@ -30,9 +30,10 @@ function getDb() {
     if (!db.inquiries) db.inquiries = [];
     if (!db.careers) db.careers = [];
     if (!db.commissioner_referrals) db.commissioner_referrals = [];
+    if (!db.onboardings) db.onboardings = [];
     return db;
   } catch (err) {
-    return { referrals: [], inquiries: [], careers: [], commissioner_referrals: [] };
+    return { referrals: [], inquiries: [], careers: [], commissioner_referrals: [], onboardings: [] };
   }
 }
 
@@ -446,6 +447,85 @@ app.post("/api/careers", (req, res) => {
     res.status(500).json({
       success: false,
       message: "An error occurred while saving your application to our secure server."
+    });
+  }
+});
+
+app.post("/api/onboarding", (req, res) => {
+  const { name, email, phone, position, address, startDate, message, cvFileName, cvFileSize } = req.body;
+  
+  const errors: Record<string, string> = {};
+  
+  if (!name || !name.trim()) {
+    errors.name = "Your Full Name is required.";
+  }
+  
+  if (!email || !email.trim()) {
+    errors.email = "Email Address is required.";
+  } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim())) {
+    errors.email = "Please enter a valid email address.";
+  }
+  
+  if (!phone || !phone.trim()) {
+    errors.phone = "Phone number is required.";
+  } else if (!/^[0-9\s\-\+\(\)]+$/.test(phone.trim())) {
+    errors.phone = "Phone number contains invalid characters.";
+  }
+  
+  if (!position || !position.trim()) {
+    errors.position = "Position is required.";
+  }
+  
+  if (!address || !address.trim()) {
+    errors.address = "Address is required.";
+  }
+  
+  if (!startDate || !startDate.trim()) {
+    errors.startDate = "Available Start Date is required.";
+  }
+
+  if (!cvFileName) {
+    errors.cvFile = "Please upload your CV document.";
+  }
+  
+  if (Object.keys(errors).length > 0) {
+    return res.status(422).json({
+      success: false,
+      message: "Validation failed.",
+      errors
+    });
+  }
+  
+  try {
+    const db = getDb();
+    const newOnboarding = {
+      id: db.onboardings.length + 1,
+      name: name.trim(),
+      email: email.trim(),
+      phone: phone.trim(),
+      position: position.trim(),
+      address: address.trim(),
+      start_date: startDate.trim(),
+      message: message ? message.trim() : null,
+      cv_file_name: cvFileName,
+      cv_file_size: cvFileSize,
+      created_at: new Date().toISOString()
+    };
+    db.onboardings.push(newOnboarding);
+    saveDb(db);
+    
+    res.status(201).json({
+      success: true,
+      message: "Onboarding information successfully registered under regulation standards.",
+      data: {
+        name: newOnboarding.name,
+        position: newOnboarding.position
+      }
+    });
+  } catch (err) {
+    res.status(500).json({
+      success: false,
+      message: "An error occurred while saving your onboarding application."
     });
   }
 });

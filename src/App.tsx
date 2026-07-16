@@ -18,6 +18,7 @@ import AssistantChat from "./components/AssistantChat.tsx";
 import ServiceDetail from "./components/ServiceDetail.tsx";
 import Referrals from "./components/Referrals.tsx";
 import Policies from "./components/Policies.tsx";
+import Onboarding from "./components/Onboarding.tsx";
 import warmCareInteraction from "./assets/images/warm_care_interaction_new_1782404279000.jpg";
 import HumanCare from "./components/HumanCare.tsx";
 import ScrollReveal, { StaggerItem } from "./components/ScrollReveal.tsx";
@@ -170,6 +171,8 @@ export default function App() {
         return <GovernancePages activePageId="safe" onNavigate={handleNavigate} />;
       case "careers":
         return <Careers onNavigate={handleNavigate} />;
+      case "onboarding":
+        return <Onboarding onNavigate={handleNavigate} />;
       case "referrals":
         return <Referrals onNavigate={handleNavigate} />;
       case "policies":

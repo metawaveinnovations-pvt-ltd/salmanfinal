@@ -779,6 +779,13 @@ export default function Header({ onNavigate, activeSection }: HeaderProps) {
               <span>Careers Opportunities</span>
             </button>
             <button
+              onClick={() => { onNavigate("onboarding"); setIsOpen(false); }}
+              className="w-full py-3 flex items-center justify-center space-x-2 border border-gov-blue/10 hover:border-gov-blue/25 text-gov-blue font-bold text-xs rounded-xl transition bg-slate-50"
+            >
+              <ShieldCheck className="w-4 h-4 text-care-green" />
+              <span>Employee Onboarding</span>
+            </button>
+            <button
               onClick={() => { onNavigate("contact"); setIsOpen(false); }}
               className="w-full py-3 flex items-center justify-center space-x-2 bg-gov-blue hover:bg-calm-blue text-white font-extrabold text-xs rounded-xl shadow-md cursor-pointer"
             >

@@ -128,6 +128,16 @@ export default function PageHero({
       breadcrumbParentId: "hero",
       breadcrumbLabel: "Careers"
     },
+    "onboarding": {
+      title: "Employee Onboarding",
+      sub: "Please complete the onboarding form below and upload your CV. Our recruitment team will review your information and contact you regarding the next steps.",
+      badge: "Start Your Journey with PRO Care Homes",
+      gradient: "from-[#0a1e3b] via-care-purple to-care-green",
+      icon: Users,
+      breadcrumbParent: "Careers",
+      breadcrumbParentId: "careers",
+      breadcrumbLabel: "Onboarding"
+    },
     "contact": {
       title: "Contact & On-Duty Placement Gateway",
       sub: "We co-ordinate closely with UK Local Authorities, Social Teams, and family networks. Get in touch with us 24/7.",

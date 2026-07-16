@@ -369,8 +369,26 @@ export default function Careers({ onNavigate }: CareersProps) {
                 </div>
                 <div className="flex items-center space-x-1.5 bg-white/10 px-3 py-2 rounded-lg border border-white/5">
                   <Check className="w-4 h-4 text-emerald-300" />
-                  <span>No CV Required for Initial Registration</span>
+                  <span>Interactive Onboarding Pipeline</span>
                 </div>
+              </div>
+
+              <div className="mt-8 flex flex-wrap gap-4">
+                <button
+                  onClick={() => scrollToApplication("Apply to Become an Adult Support Worker")}
+                  className="px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold rounded-xl transition duration-150 text-xs cursor-pointer shadow-md"
+                >
+                  Quick Expression of Interest
+                </button>
+                {onNavigate && (
+                  <button
+                    onClick={() => onNavigate("onboarding")}
+                    className="px-6 py-3 bg-white/10 hover:bg-white/20 border border-white/20 text-white font-extrabold rounded-xl transition duration-150 text-xs cursor-pointer flex items-center space-x-2"
+                  >
+                    <span>Complete Full Onboarding & Upload CV</span>
+                    <ArrowRight className="w-4 h-4 text-premium-gold" />
+                  </button>
+                )}
               </div>
             </div>
           </div>

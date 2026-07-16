@@ -60,6 +60,7 @@ export default function Footer({ onNavigate }: { onNavigate: (id: string) => voi
                 { id: "referrals", name: "Secure Referrals & Placements" },
                 { id: "policies", name: "Policies & Standards Hub" },
                 { id: "careers", name: "Values Recruitment" },
+                { id: "onboarding", name: "Employee Onboarding" },
                 { id: "contact", name: "Professional Contacts" }
               ].map((item) => (
                 <li key={item.id}>
