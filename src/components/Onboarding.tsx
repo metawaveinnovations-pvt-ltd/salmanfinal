@@ -284,8 +284,8 @@ export default function Onboarding({ onNavigate }: OnboardingProps) {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {/* Full Name */}
                   <div className="space-y-1.5">
-                    <label className="font-extrabold text-slate-700 flex items-center gap-1">
-                      <User className="w-3.5 h-3.5 text-slate-400" />
+                    <label className="font-extrabold text-slate-700 flex items-center gap-1.5">
+                      <User className="w-3.5 h-3.5 text-gov-blue/60" />
                       Full Name <span className="text-red-500">*</span>
                     </label>
                     <input
@@ -295,14 +295,14 @@ export default function Onboarding({ onNavigate }: OnboardingProps) {
                       onChange={handleInputChange}
                       required
                       placeholder="e.g. Rachel Higgins"
-                      className="w-full p-3 bg-white border border-slate-200 rounded-xl text-slate-900 text-xs focus:border-gov-blue focus:ring-1 focus:ring-gov-blue focus:outline-none transition-all"
+                      className="w-full p-3 bg-slate-50/40 hover:bg-slate-50/80 focus:bg-white border border-slate-200 focus:border-gov-blue focus:ring-4 focus:ring-gov-blue/10 rounded-xl text-slate-900 text-xs focus:outline-none transition-all duration-250"
                     />
                   </div>
 
                   {/* Email Address */}
                   <div className="space-y-1.5">
-                    <label className="font-extrabold text-slate-700 flex items-center gap-1">
-                      <Mail className="w-3.5 h-3.5 text-slate-400" />
+                    <label className="font-extrabold text-slate-700 flex items-center gap-1.5">
+                      <Mail className="w-3.5 h-3.5 text-gov-blue/60" />
                       Email Address <span className="text-red-500">*</span>
                     </label>
                     <input
@@ -312,14 +312,14 @@ export default function Onboarding({ onNavigate }: OnboardingProps) {
                       onChange={handleInputChange}
                       required
                       placeholder="e.g. rachel@example.com"
-                      className="w-full p-3 bg-white border border-slate-200 rounded-xl text-slate-900 text-xs focus:border-gov-blue focus:ring-1 focus:ring-gov-blue focus:outline-none transition-all"
+                      className="w-full p-3 bg-slate-50/40 hover:bg-slate-50/80 focus:bg-white border border-slate-200 focus:border-gov-blue focus:ring-4 focus:ring-gov-blue/10 rounded-xl text-slate-900 text-xs focus:outline-none transition-all duration-250"
                     />
                   </div>
 
                   {/* Phone Number */}
                   <div className="space-y-1.5">
-                    <label className="font-extrabold text-slate-700 flex items-center gap-1">
-                      <Phone className="w-3.5 h-3.5 text-slate-400" />
+                    <label className="font-extrabold text-slate-700 flex items-center gap-1.5">
+                      <Phone className="w-3.5 h-3.5 text-gov-blue/60" />
                       Phone Number <span className="text-red-500">*</span>
                     </label>
                     <input
@@ -329,14 +329,14 @@ export default function Onboarding({ onNavigate }: OnboardingProps) {
                       onChange={handleInputChange}
                       required
                       placeholder="e.g. +44 7123 456789"
-                      className="w-full p-3 bg-white border border-slate-200 rounded-xl text-slate-900 text-xs focus:border-gov-blue focus:ring-1 focus:ring-gov-blue focus:outline-none transition-all"
+                      className="w-full p-3 bg-slate-50/40 hover:bg-slate-50/80 focus:bg-white border border-slate-200 focus:border-gov-blue focus:ring-4 focus:ring-gov-blue/10 rounded-xl text-slate-900 text-xs focus:outline-none transition-all duration-250"
                     />
                   </div>
 
                   {/* Position Applying For */}
                   <div className="space-y-1.5">
-                    <label className="font-extrabold text-slate-700 flex items-center gap-1">
-                      <Briefcase className="w-3.5 h-3.5 text-slate-400" />
+                    <label className="font-extrabold text-slate-700 flex items-center gap-1.5">
+                      <Briefcase className="w-3.5 h-3.5 text-gov-blue/60" />
                       Position Applying For <span className="text-red-500">*</span>
                     </label>
                     <select
@@ -344,7 +344,7 @@ export default function Onboarding({ onNavigate }: OnboardingProps) {
                       value={formData.position}
                       onChange={handleInputChange}
                       required
-                      className="w-full p-3 bg-white border border-slate-200 rounded-xl text-slate-900 text-xs focus:border-gov-blue focus:outline-none cursor-pointer"
+                      className="w-full p-3 bg-slate-50/40 hover:bg-slate-50/80 focus:bg-white border border-slate-200 focus:border-gov-blue focus:ring-4 focus:ring-gov-blue/10 rounded-xl text-slate-900 text-xs focus:outline-none cursor-pointer transition-all duration-250"
                     >
                       <option value="Apply to Become an Adult Support Worker">
                         Adult Support Worker
@@ -366,8 +366,8 @@ export default function Onboarding({ onNavigate }: OnboardingProps) {
 
                   {/* Available Start Date */}
                   <div className="space-y-1.5">
-                    <label className="font-extrabold text-slate-700 flex items-center gap-1">
-                      <Calendar className="w-3.5 h-3.5 text-slate-400" />
+                    <label className="font-extrabold text-slate-700 flex items-center gap-1.5">
+                      <Calendar className="w-3.5 h-3.5 text-gov-blue/60" />
                       Available Start Date <span className="text-red-500">*</span>
                     </label>
                     <input
@@ -376,7 +376,7 @@ export default function Onboarding({ onNavigate }: OnboardingProps) {
                       value={formData.startDate}
                       onChange={handleInputChange}
                       required
-                      className="w-full p-3 bg-white border border-slate-200 rounded-xl text-slate-900 text-xs focus:border-gov-blue focus:ring-1 focus:ring-gov-blue focus:outline-none transition-all cursor-pointer"
+                      className="w-full p-3 bg-slate-50/40 hover:bg-slate-50/80 focus:bg-white border border-slate-200 focus:border-gov-blue focus:ring-4 focus:ring-gov-blue/10 rounded-xl text-slate-900 text-xs focus:outline-none transition-all duration-250 cursor-pointer"
                     />
                   </div>
 
@@ -385,8 +385,8 @@ export default function Onboarding({ onNavigate }: OnboardingProps) {
 
                   {/* Address */}
                   <div className="space-y-1.5 md:col-span-2">
-                    <label className="font-extrabold text-slate-700 flex items-center gap-1">
-                      <MapPin className="w-3.5 h-3.5 text-slate-400" />
+                    <label className="font-extrabold text-slate-700 flex items-center gap-1.5">
+                      <MapPin className="w-3.5 h-3.5 text-gov-blue/60" />
                       Full Address <span className="text-red-500">*</span>
                     </label>
                     <input
@@ -396,7 +396,7 @@ export default function Onboarding({ onNavigate }: OnboardingProps) {
                       onChange={handleInputChange}
                       required
                       placeholder="House number, street, city, postcode"
-                      className="w-full p-3 bg-white border border-slate-200 rounded-xl text-slate-900 text-xs focus:border-gov-blue focus:ring-1 focus:ring-gov-blue focus:outline-none transition-all"
+                      className="w-full p-3 bg-slate-50/40 hover:bg-slate-50/80 focus:bg-white border border-slate-200 focus:border-gov-blue focus:ring-4 focus:ring-gov-blue/10 rounded-xl text-slate-900 text-xs focus:outline-none transition-all duration-250"
                     />
                   </div>
 
@@ -411,23 +411,23 @@ export default function Onboarding({ onNavigate }: OnboardingProps) {
                       onChange={handleInputChange}
                       rows={3}
                       placeholder="Tell us why you are interested in joining PRO Care Homes..."
-                      className="w-full p-3 bg-white border border-slate-200 rounded-xl text-slate-900 text-xs focus:border-gov-blue focus:ring-1 focus:ring-gov-blue focus:outline-none transition-all"
+                      className="w-full p-3 bg-slate-50/40 hover:bg-slate-50/80 focus:bg-white border border-slate-200 focus:border-gov-blue focus:ring-4 focus:ring-gov-blue/10 rounded-xl text-slate-900 text-xs focus:outline-none transition-all duration-250"
                     />
                   </div>
                 </div>
 
                 {/* CV UPLOAD AREA */}
                 <div className="space-y-2">
-                  <label className="font-extrabold text-slate-700 flex items-center gap-1">
+                  <label className="font-extrabold text-slate-700 flex items-center gap-1.5">
                     <UploadCloud className="w-4 h-4 text-gov-blue" />
                     Upload Your CV <span className="text-red-500">*</span>
                   </label>
                   
                   {cvFile ? (
                     /* FILE PREVIEW */
-                    <div className="flex items-center justify-between p-4 bg-sky-50/50 border-2 border-sky-200/50 rounded-2xl animate-fadeIn">
+                    <div className="flex items-center justify-between p-4 bg-sky-50/50 border border-sky-100 rounded-2xl animate-fadeIn">
                       <div className="flex items-center space-x-3 overflow-hidden">
-                        <div className="p-2.5 bg-sky-500 text-white rounded-xl flex-shrink-0">
+                        <div className="p-2.5 bg-gov-blue text-white rounded-xl flex-shrink-0">
                           <FileText className="w-6 h-6" />
                         </div>
                         <div className="min-w-0">
@@ -442,7 +442,7 @@ export default function Onboarding({ onNavigate }: OnboardingProps) {
                       <button
                         type="button"
                         onClick={removeFile}
-                        className="p-2 text-slate-450 hover:text-red-500 hover:bg-red-50 rounded-full transition-colors cursor-pointer"
+                        className="p-2 text-slate-400 hover:text-red-500 hover:bg-red-550/10 rounded-full transition-colors cursor-pointer"
                         title="Remove uploaded CV"
                       >
                         <X className="w-4 h-4" />
@@ -455,10 +455,10 @@ export default function Onboarding({ onNavigate }: OnboardingProps) {
                       onDragOver={handleDrag}
                       onDragLeave={handleDrag}
                       onDrop={handleDrop}
-                      className={`relative border-2 border-dashed rounded-2xl p-8 text-center transition-all cursor-pointer ${
+                      className={`relative border-2 border-dashed rounded-2xl p-8 text-center transition-all duration-200 cursor-pointer ${
                         isDragActive 
                           ? "border-gov-blue bg-gov-blue/[0.04] shadow-md scale-[0.99]" 
-                          : "border-slate-300 hover:border-gov-blue bg-slate-50 hover:bg-sky-50/10"
+                          : "border-slate-200 hover:border-gov-blue/50 bg-slate-50/30 hover:bg-slate-50/70"
                       }`}
                       onClick={triggerFileInput}
                     >
@@ -471,7 +471,7 @@ export default function Onboarding({ onNavigate }: OnboardingProps) {
                       />
                       
                       <div className="space-y-3.5">
-                        <div className="w-11 h-11 bg-gov-blue/5 text-gov-blue rounded-full flex items-center justify-center mx-auto">
+                        <div className="w-11 h-11 bg-gov-blue/5 text-gov-blue rounded-full flex items-center justify-center mx-auto transition-transform duration-300 hover:scale-105">
                           <UploadCloud className="w-6 h-6" />
                         </div>
                         
@@ -479,7 +479,7 @@ export default function Onboarding({ onNavigate }: OnboardingProps) {
                           <p className="text-xs font-extrabold text-slate-800">
                             Drag and drop your CV here, or <span className="text-gov-blue hover:underline">browse files</span>
                           </p>
-                          <p className="text-[10px] text-slate-550 leading-relaxed">
+                          <p className="text-[10px] text-slate-500 leading-relaxed">
                             Supported formats: PDF, DOC, DOCX (Max 10MB)
                           </p>
                         </div>
@@ -495,15 +495,15 @@ export default function Onboarding({ onNavigate }: OnboardingProps) {
                 </div>
 
                 {/* CONSENT CHECKBOX */}
-                <div className="p-4 bg-slate-50 border border-slate-150 rounded-2xl">
+                <div className="p-4 bg-slate-50/60 border border-slate-150 rounded-2xl">
                   <label className="flex items-start gap-3 cursor-pointer select-none">
                     <input
                       type="checkbox"
                       checked={consent}
                       onChange={(e) => setConsent(e.target.checked)}
-                      className="w-4 h-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500 mt-0.5 cursor-pointer flex-shrink-0"
+                      className="w-4 h-4 rounded border-slate-300 text-care-green focus:ring-care-green mt-0.5 cursor-pointer flex-shrink-0"
                     />
-                    <span className="text-slate-650 text-xs leading-relaxed font-medium">
+                    <span className="text-slate-600 text-xs leading-relaxed font-medium">
                       I confirm that the information provided is accurate and I agree to PRO Care Homes processing my application. <span className="text-red-500">*</span>
                     </span>
                   </label>
@@ -520,7 +520,7 @@ export default function Onboarding({ onNavigate }: OnboardingProps) {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full py-3.5 bg-emerald-600 hover:bg-emerald-750 text-white font-extrabold rounded-xl flex items-center justify-center space-x-2 transition-all cursor-pointer shadow-md hover:shadow-lg active:scale-99 ${
+                  className={`w-full py-3.5 bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white font-extrabold rounded-xl flex items-center justify-center space-x-2 transition-all duration-200 cursor-pointer shadow-md shadow-emerald-100 hover:shadow-lg hover:shadow-emerald-200/60 active:scale-98 ${
                     isSubmitting ? "opacity-75 cursor-not-allowed" : ""
                   }`}
                 >
