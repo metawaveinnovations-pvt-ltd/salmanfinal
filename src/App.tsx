@@ -515,73 +515,7 @@ export default function App() {
         {/* Human Care & Real Life Moments Section */}
         <HumanCare onNavigate={handleNavigate} />
 
-        {/* SECTION: Employee Onboarding Fast-Track Gateway (MWI Identity Oriented) */}
-        <section className="py-16 bg-gradient-to-b from-[#FAFBFD] to-white border-t border-b border-slate-100 relative overflow-hidden">
-          {/* Glowing Ambient Spotlights */}
-          <div className="absolute top-1/2 left-1/3 -translate-y-1/2 w-[500px] h-[300px] bg-gov-blue/[0.03] rounded-full blur-3xl -z-10" />
-          <div className="absolute right-10 bottom-0 w-80 h-80 bg-care-green/[0.04] rounded-full blur-3xl -z-10" />
-          
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            {/* Multi-layered Premium Gradient-bordered Card */}
-            <ScrollReveal variant="fade-up" className="relative p-[1px] bg-gradient-to-r from-gov-blue/15 via-premium-gold/20 to-care-green/20 rounded-3xl shadow-xl shadow-slate-100/40">
-              <div className="bg-white rounded-[23px] p-6 sm:p-10 md:p-12 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
-                
-                {/* Left Side Content */}
-                <div className="space-y-4 text-left max-w-3xl">
-                  <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-gov-blue/[0.03] to-care-green/[0.03] border border-gov-blue/10 px-3 py-1 rounded-full">
-                    <Sparkles className="w-3.5 h-3.5 text-premium-gold animate-pulse" />
-                    <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-gov-blue/90">
-                      Metawave Innovations • Onboarding Suite
-                    </span>
-                  </div>
-                  
-                  <div className="space-y-2">
-                    <h3 className="text-xl sm:text-2xl md:text-3.5xl font-extrabold text-gov-blue tracking-tight leading-tight">
-                      Want to build a career that truly <span className="text-care-green">matters</span>?
-                    </h3>
-                    <p className="text-xs sm:text-sm text-slate-550 leading-relaxed max-w-2xl">
-                      Become a vital part of PRO Care Homes. Our smart onboarding system handles vetting, background checks, and values-based matching instantly under CQC Regulation 18 framework.
-                    </p>
-                  </div>
-                  
-                  {/* Small Info Badges for Trust */}
-                  <div className="flex flex-wrap gap-x-4 gap-y-2 pt-2 text-[11px] font-semibold text-slate-500">
-                    <div className="flex items-center space-x-1.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-care-green" />
-                      <span>CQC Regulated Compliance</span>
-                    </div>
-                    <div className="flex items-center space-x-1.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-calm-blue" />
-                      <span>Fast Vetting Track</span>
-                    </div>
-                    <div className="flex items-center space-x-1.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-premium-gold" />
-                      <span>Enhanced DBS Fast-track</span>
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Right Side Call to Actions */}
-                <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto shrink-0 pt-2 lg:pt-0">
-                  <button
-                    onClick={() => handleNavigate("onboarding")}
-                    className="px-6 py-3.5 bg-gov-blue hover:bg-calm-blue text-white font-extrabold rounded-xl transition duration-150 text-xs shadow-md hover:shadow-lg active:scale-95 text-center cursor-pointer flex items-center justify-center space-x-2 group w-full sm:w-auto"
-                  >
-                    <span>Start Onboarding Form</span>
-                    <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1 text-premium-gold" />
-                  </button>
-                  <button
-                    onClick={() => handleNavigate("careers")}
-                    className="px-6 py-3.5 bg-slate-50 hover:bg-slate-100 border border-slate-200 text-slate-700 font-extrabold rounded-xl transition duration-150 text-xs text-center cursor-pointer w-full sm:w-auto"
-                  >
-                    Careers Academy
-                  </button>
-                </div>
-
-              </div>
-            </ScrollReveal>
-          </div>
-        </section>
+        {/* Section relocated to split Governance and Statistics sections below */}
 
         {/* SECTION 2: Trusted Governance & Quality Commitment */}
         <section className="py-24 bg-white relative border-t border-slate-100">
@@ -719,9 +653,84 @@ export default function App() {
 
               </ScrollReveal>
             </div>
+          </div>
+        </section>
 
-            {/* Quick trust metrics row */}
-            <ScrollReveal variant="fade-up" delay={0.2} className="border-t border-slate-100 pt-12">
+        {/* SECTION: Employee Onboarding Fast-Track Gateway (MWI Identity Oriented, Translucent Gradient) */}
+        <section className="py-20 bg-gradient-to-br from-slate-50/90 via-[#FAFBFD]/40 to-slate-100/90 border-t border-b border-slate-100 relative overflow-hidden">
+          {/* Glowing Ambient spot effects */}
+          <div className="absolute top-0 right-1/4 w-80 h-80 bg-care-green/[0.04] rounded-full blur-3xl -z-10" />
+          <div className="absolute bottom-0 left-1/3 w-80 h-80 bg-gov-blue/[0.03] rounded-full blur-3xl -z-10" />
+          
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            {/* Multi-layered Premium Gradient-bordered Card */}
+            <ScrollReveal variant="fade-up" className="relative p-[1.5px] bg-gradient-to-r from-gov-blue/10 via-premium-gold/15 to-care-green/15 rounded-3xl shadow-xl shadow-slate-100/60">
+              <div className="bg-white/90 backdrop-blur-md rounded-[23px] p-6 sm:p-10 md:p-12 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+                
+                {/* Left Side Content */}
+                <div className="space-y-4 text-left max-w-3xl">
+                  <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-gov-blue/[0.03] to-care-green/[0.03] border border-gov-blue/8 px-3 py-1.5 rounded-full">
+                    <div className="relative flex h-2 w-2 mr-1">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-care-green opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-care-green"></span>
+                    </div>
+                    <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-gov-blue/80">
+                      Metawave Innovations • Interactive Onboarding Suite
+                    </span>
+                  </div>
+                  
+                  <div className="space-y-3">
+                    <h3 className="text-xl sm:text-2xl md:text-3.5xl font-extrabold text-gov-blue tracking-tight leading-tight">
+                      Want to build a career that truly <span className="bg-gradient-to-r from-care-green to-teal-600 bg-clip-text text-transparent">matters</span>?
+                    </h3>
+                    <p className="text-xs sm:text-sm text-slate-550 leading-relaxed max-w-2xl">
+                      Become a vital part of PRO Care Homes. Our smart onboarding system handles vetting, background checks, and values-based matching instantly under CQC Regulation 18 framework.
+                    </p>
+                  </div>
+                  
+                  {/* Small Info Badges for Trust */}
+                  <div className="flex flex-wrap gap-x-4 gap-y-2.5 pt-2 text-[11px] font-bold text-slate-500">
+                    <div className="flex items-center space-x-2 bg-slate-50 px-3 py-1.5 rounded-xl border border-slate-100">
+                      <span className="w-1.5 h-1.5 rounded-full bg-care-green" />
+                      <span>CQC Regulated Compliance</span>
+                    </div>
+                    <div className="flex items-center space-x-2 bg-slate-50 px-3 py-1.5 rounded-xl border border-slate-100">
+                      <span className="w-1.5 h-1.5 rounded-full bg-calm-blue" />
+                      <span>Fast Vetting Track</span>
+                    </div>
+                    <div className="flex items-center space-x-2 bg-slate-50 px-3 py-1.5 rounded-xl border border-slate-100">
+                      <span className="w-1.5 h-1.5 rounded-full bg-premium-gold" />
+                      <span>Enhanced DBS Fast-track</span>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Right Side Call to Actions */}
+                <div className="flex flex-col sm:flex-row gap-3 w-full lg:w-auto shrink-0 pt-2 lg:pt-0">
+                  <button
+                    onClick={() => handleNavigate("onboarding")}
+                    className="px-6 py-3.5 bg-gov-blue hover:bg-calm-blue text-white font-extrabold rounded-xl transition duration-150 text-xs shadow-md hover:shadow-lg active:scale-95 text-center cursor-pointer flex items-center justify-center space-x-2 group w-full sm:w-auto"
+                  >
+                    <span>Start Onboarding Form</span>
+                    <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1 text-premium-gold" />
+                  </button>
+                  <button
+                    onClick={() => handleNavigate("careers")}
+                    className="px-6 py-3.5 bg-slate-50 hover:bg-slate-100 border border-slate-200 text-slate-700 font-extrabold rounded-xl transition duration-150 text-xs text-center cursor-pointer w-full sm:w-auto"
+                  >
+                    Careers Academy
+                  </button>
+                </div>
+
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
+        {/* SECTION 3: Trust Statistics & High Performance Metrics */}
+        <section className="py-16 bg-[#FAFBFD] relative border-b border-slate-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <ScrollReveal variant="fade-up" delay={0.2}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
                 
                 {/* Metric Card 1: Clinical Leadership */}
